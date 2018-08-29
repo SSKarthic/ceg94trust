@@ -1,7 +1,8 @@
 CEG 94 Trust web content and documents
 
-index.html
+web folder contains contetnt for trust portal
+  index.html
 
-images
+  images
 
-document in docs 
+document are in docs 
