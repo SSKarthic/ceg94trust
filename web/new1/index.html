@@ -4,57 +4,116 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CEG94 - Trust</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="">
+  <title>CEG '94 Trust</title>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Main CSS -->
-    <link href="css/style.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="
+  sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <style>
+
+<style>
 body {   
    background-color: #eeeeee;
    font-family:  "Slabo+27px", "Oxygen", "Open Sans", sans-serif;
    font-weight: 300;
 }
 
-.icon-bar {
-
-    background-color: #555;
-    overflow: auto;
-   width:100%;
+#nav .active, .collapsible:hover {
+    background-color: #fff; 
+    color: blue;
 }
 
-.icon-bar a {
-    float: left;
-    width: 14%;
+.dash-unit {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border: 1px solid #383737;
+    /* background-image: url(../img/sep-half.png); */
+    background-color: #3d3d3d;
+    color: #fff;
+    height: 290px;
+}
+.cont {
     text-align: center;
-    padding: 10px 0px 0px 0px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
+    margin-top: 10px;
+}
+.half-unit {
+    margin-bottom: 30px;
+    padding-bottom: 4px;
+    border: 1px solid #383737;
+    /* background-image: url(../img/sep-half.png); */
+    background-color: #3d3d3d;
+    color: #fff;
+    height: 130px;
+}
+.half-unit bold {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: middle;
+}
+.dash-unit bold {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: middle;
+}
+.sec-footer {
+    padding-top: 5rem;
+    padding-bottom: 10.2rem;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+.sec-contact {
+    padding-top: 5rem;
+    padding-bottom: 10.2rem;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+.sec-contrib{
+    padding-top: 5rem;
+    padding-bottom: 10.2rem;
+    background-color: #AAAAAA;
+    color: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.sec-vision{
+    padding-top: 5rem;
+    padding-bottom: 10.2rem;
+    background-color: #111111;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+.sec-aid{
+    padding-top: 5rem;
+    padding-bottom: 10.2rem;
+    background-color: #AAAAAA;
+    color: rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
-.icon-bar a:hover {
-    background-color: #000;
+.sec-ben{
+    padding-top: 5rem;
+    padding-bottom: 10.2rem;
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.black-pen{
+  color: black
 }
 
-.active {
-    background-color: #4CAF50 !important;
-}
 
 .w3-container, .w3-panel {
    padding: 0.01em 10px;
@@ -188,6 +247,61 @@ body {
 h4 {
     font-size: 24px;
 }
+
+.icondirection {  
+    flex-direction: row;
+    font-size: 28px;
+    
+}
+.icontextvisible {  
+  display: none;
+}
+
+@media only screen and (min-width: 360px) {
+  .icondirection {
+    font-size: 32px;
+    flex-direction: row;
+  }
+  .icontextvisible {
+    display: none;
+    padding-right: 12px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .icondirection {
+    font-size: 36px;
+    flex-direction: row;
+  }
+  .icontextvisible {
+    display: none;
+    padding-right: 12px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .icondirection {
+    font-size: 19px;
+    flex-direction: column;
+  }
+  .icontextvisible {
+    display: block;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .icondirection {
+    font-size: 19px;
+    flex-direction: column;
+  }
+  .icontextvisible {
+    display: block;
+    padding-right: 10px;
+  }
+}
+
+
+
 </style>
 
 
@@ -206,25 +320,55 @@ h4 {
 
 </head>
 
-  <body>
+<body data-spy="scroll" data-target=".navbar" data-offset=100>
 <!-- Navbar -->
-<div class="w3-top">
-<div class="w3-container w3-content w3-center w3-padding-10" style="max-width:800px" id="menu">
+<div id="nav" class="w3-top">
+  <div class="w3-container  w3-content w3-center" style="max-width:800px" id="menu">
 
-<div class="icon-bar">
-  <a href="#home" alt="who we are"><i class="fa fa-university" alt="who we are"></i></a>
-  <a href="#ay2008-2009" alt="AY Supprt 2008-2009"><i class="fas fa-hands-helping" alt="AY Supprt 2008-2009"></i></a>  
-  <a href="#selection"><i class="fas fa-user-graduate"></i></a>
-  <a href="#beneficiaries"><i class="fas fa-crown"></i></a>
-  <a href="#donations"><i class="fas fa-donate"></i></a>
-  <a href="#committee"><i class="fa fa-users"></i></a>
-  <a href="#contributions"><i class="fas fa-signal"></i></a>  
+  <section>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+   
+
+    <ul class="nav navbar-nav navbar-right icondirection" >
+
+      
+       <li class="nav-item">
+            <a class="nav-link"  href="#home" alt="who we are"><i class="fas fa-university" alt="who we are">&nbsp;<span class="icontextvisible">Home</span></i></a>
+          </li>
+            
+          <li class="nav-item">
+           <a class="nav-link" href="#ay2008-2009" alt="AY Supprt 2008-2009"><i class="fas fa-hands-helping" alt="AY Supprt 2008-2009">&nbsp;<span class="icontextvisible">2008-2009</span></i></a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="#selection"><i class="fas fa-user-graduate">&nbsp;<span class="icontextvisible">Selection</span></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#beneficiaries"><i class="fas fa-crown">&nbsp;<span class="icontextvisible">Beneficiaries</span></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#donations"><i class="fas fa-donate">&nbsp;<span class="icontextvisible">Donations</span></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#committee"><i class="fas fa-users">&nbsp;<span class="icontextvisible">Committee</span></i></a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#contributions"><i class="fas fa-signal">&nbsp;<span class="icontextvisible">Graphs</span></i></a>  
+          </li>
+         
+      
+    </ul>
+
+
+  </nav>
+
+  </section>
+
+  </div>
+
 </div>
-</div>
-<div class="w3-container w3-content w3-center w3-padding-10" style="max-width:800px" id="menu">
-  <p id="contactus" class="w3-right" style="font-weight: 600">Reach us: &nbsp;&nbsp; <a href="mailto:info@ceg94trust.org" style="underline">info@ceg94trust.org</a><br/><br/></p>
-</div>
-</div>
+
+
+
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:800px;">
@@ -232,9 +376,6 @@ h4 {
 
   <!-- The Trust Section -->
   <div class="w3-container w3-content w3-center" style="max-width:800px;padding-top: 100px;" id="home">
-    <h2 class="w3-wide">The CEG'94 Trust</h2>
-    <p class="w3-opacity1"><i>Ignite the future</i></p>
-
     <br/>
     <h4 class="w3-wide"> Who are we?</h4>
     <br/>
