@@ -175,47 +175,47 @@
 
 
         /* docs unvisited link */
-        #home a:link {
+        #sec-home a:link {
             color: blue;
         }
 
         /* visited link */
-        #home a:visited {
+        #sec-home a:visited {
             color: green;
         }
 
         /* mouse over link */
-        #home a:hover {
+        #sec-home a:hover {
             color: hotpink;
         }
 
         /* selected link */
-        #home a:active {
+        #sec-home a:active {
             color: blue;
         }
 
 
-        #donations img {
+        #sec-donations img {
             width: 100%;
             height: auto;
         }
 
-        #contributions img {
+        #sec-contributions img {
             width: 100%;
             height: auto;
         }
 
-        #ay2008-2009 img {
+        #sec-ay2018-2019 img {
             width: 100%;
             height: auto;
         }
 
-        #selection img {
+        #sec-selection img {
             width: 100%;
             height: auto;
         }
 
-        #beneficiaries img {
+        #sec-beneficiaries img {
             width: 100%;
             height: auto;
         }
@@ -270,7 +270,7 @@
             display: none;
         }
 
-        @media only screen and (min-width: 300px) {
+        @media only screen and (min-width: 300px), only screen and (max-width: 640px) {
             .icondirection {
                 font-size: 30px;
                 flex-direction: row;
@@ -299,7 +299,7 @@
             }
         }
 
-        @media only screen and (min-width: 360px) {
+        @media only screen and (min-width: 360px),  only screen and (max-width: 640px) {
             .icondirection {
                 font-size: 34px;
                 flex-direction: row;
@@ -465,7 +465,7 @@
                         </li>
                         <li>
 
-                            <a href="mailto:nfo@ceg94trust.org">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-envelope" alt="Account details?" style="color:white;font-size:18px;">&nbsp;Contact Us</i></a>
+                            <a href="mailto:info@ceg94trust.org">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-envelope" alt="Account details?" style="color:white;font-size:18px;">&nbsp;Contact Us</i></a>
                         </li>
                     </ul>
 
@@ -488,11 +488,11 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link"  href="#home" alt="who we are"><i class="fas fa-university" alt="who we are">&nbsp;<span class="icontextvisible">About</span></i></a>
+                            <a class="nav-link"  href="#sec-home" alt="who we are"><i class="fas fa-university" alt="who we are">&nbsp;<span class="icontextvisible">About</span></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#ay2008-2009" alt="AY Supprt 2008-2009"><i class="fas fa-hands-helping" alt="AY Supprt 2008-2009">&nbsp;<span class="icontextvisible">2008-2009</span></i></a>
+                            <a class="nav-link" href="#ay2018-2019" alt="AY Supprt 2018-2019"><i class="fas fa-hands-helping" alt="AY Supprt 2018-2019">&nbsp;<span class="icontextvisible">2018-2019</span></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#selection"><i class="fas fa-user-graduate">&nbsp;<span class="icontextvisible">Selection</span></i></a>
@@ -529,10 +529,10 @@
 
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:800px;">
+<div class="w3-content" style="position:relative; max-width:800px;">
 
     <!-- The Trust Section -->
-    <div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="home">
+    <div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="sec-home">
 
         <section>
             <div class="container justify-content-stretch">
@@ -540,7 +540,7 @@
                     <div class="col-md-12 col-sm-12 col-lg-12">
                         <h4 class="pb-3  display-6"><i>Ignite the Future</i></h4>
                         <p class="pb-3 display-5">College of Engineering, Guindy, is a 225- year-old prestigious institution, that has produced eminent technocrats, entrepreneurs and statesmen over time. Each year over 1200 students graduate from 14 disciplines of engineering from this meritorious institution.</p>
-                        <p>We, the alumni of this institution, who passed out in the year 1994, have joined together to form the CEG94 Trust on 29 Nov 2017 with an aim to help the CEG community.The aim of the Trust is to identify such deserving students and help them achieve their dreams.</p>
+                        <p>We, the alumni of this institution, who passed out in the year 1994, have joined together to form the CEG94 Trust on 29 Nov 2017 with an aim to help the CEG community.</p>
                     </div>
                 </div>
                 <br/>
@@ -571,9 +571,15 @@
                     <p class="w3-center">
                         <b>A/C no:</b>  602205047907
                     </p>
+
+                    <!-- to adjust for top bar -->
+                    <div id="ay2018-2019"></div>
+
                     <p class="w3-center">
                         <b>IFSC code:</b>
                         ICIC0006022</p>
+
+
                     <p class="w3-center">
                         <b>Beneficiary name:</b>
                         CEG94Trust</p>
@@ -593,10 +599,12 @@
 
 
 <!-- The Academic Year Section -->
-<div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="ay2008-2009">
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-ay2018-2019">
     <section class="sec-curray">
+        <p>
         <h2 class="w3-wide">Student support in Academic Year (AY)</h2>
         <h2 class="w3-wide">2018-19</h2>
+        </p>
         <br/>
             <p class="w3-center">
                 <img src="images/aybreakup.jpg" />
@@ -631,11 +639,19 @@
         <p style="text-align: left">
             Further, for the even semester commencing Dec’18,
         </p>
+
+        <br/>
+
         <ul style="text-align: left;">
             <li>Funding reserved by Trust for supporting two 1st year students (₹ 70k)</li>
+
+            <!-- to adjust for top bar -->
+            <div id="selection"></div>
+
             <li>Funding pledged by 1 Individual Donor for supporting two 1st year students (₹ 70k)</li>
             <li>Funding pledged by 2 Individual Donors for supporting hostel fees for two students (₹ 55k)</li>
         </ul>
+
 
         <br/>
         <p class="w3-center rupee" style="text-align: left">
@@ -644,12 +660,14 @@
         <div class="row">
             <div class="col-12"><a href="#home" class="btn float-right">Top</a></div>
         </div>
+        <br/>
     </section>
 </div>
 
 <!-- The Academic Year Section -->
-<div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="selection">
-    <h2 class="w3-wide">Student selection process</h2>
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-selection">
+    <br/>
+    <p><h2 class="w3-wide">Student selection process</h2></p>
     <br/>
     <p style="text-align: left">
         The Trust strives to choose deserving students for sponsorship, irrespective of their caste, creed or sex. The process of student selection for sponsorship is based on the following criteria, in the order specified:
@@ -679,7 +697,12 @@
 
     <br/><br/>Admission for first year students normally happens in August every year. From AY 2018-19, the admission counselling was made online, and the students were required to pay their fees prior to reporting at the college. The Trust anticipates that there will be students requiring assistance for their II semester fees in Nov’18.
     </p>
+
     <br/>
+
+    <!-- to adjust for top bar -->
+    <div id="beneficiaries"></div>
+
     <h4>Future actions intended by Trust</h4>
     <p class="w3-center">
         <br/>Trust will provide support in applying for government scholarships, if applicable.
@@ -688,9 +711,10 @@
     <div class="row">
         <div class="col-12"><a href="#home" class="btn float-right">Top</a></div>
     </div>
+    <br/>
 </div>
 <!-- The Academic Year Section -->
-<div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="beneficiaries">
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-beneficiaries">
 
     <h2 class="w3-wide">Beneficiaries</h2>
     <br/>
@@ -706,26 +730,33 @@
         <br/>3. Male student, has a 12th score of 1136 with cut-off 192.25, monthly family income is 7k.
         <br/>4. Male student, Tamil  medium at Government school ,  scored 1134 in 12th with a cut-off of 192 with family monthly ncome of less than 10k.
     </p>
-    <br/>
-    <p class="w3-center">
-    <h4>Student Evaluation Experience</h4>
-    <br/>
-    The student evaluation experience was very intense. The family and economic background of some of these students made us realize how heroic some of them truly are.
-    <br/><br/>
-    With parental income of ₹4k to ₹10k per month, single parent in some cases, transitioning from Tamil medium to English, not having money to go back and visit their parents even once during a semester, having to use scholarship money to pay for tuition fees, putting up with bank managers who make them run pillar to post to sanction loan, each and every one of them face not just financial issues but many more - but nothing has stopped these students from achieving 1178,1154 and 1136 out of 1200 and a CGPA of nothing less than 8.0 at CEG.
-    <br/><br/>
-    <h4>Trust (Vs) Individual Sponsors</h4>
-    <br/>
-    While the Trust is a collective sponsorship initiative, supported by as many as 140+ donors as of date, a few individuals expressed their willingness to do more. They came forward to support the financial needs of a deserving student for all 4 years, through graduation. A couple of them took a leap of responsibility in additionally mentoring the students, preparing them to succeed in the world outside. The Trust is grateful to these individual sponsors for their commitment to the noble cause.
 
+    <br/>
+    <p class="w3-center"><h4>Student Evaluation Experience</h4></p>
+    <br/>
+    <p>The student evaluation experience was very intense. The family and economic background of some of these students made us realize how heroic some of them truly are.</p>
+    <br/>
+    <p>With parental income of ₹4k to ₹10k per month, single parent in some cases, transitioning from Tamil medium to English, not having money to go back and visit their parents even once during a semester, having to use scholarship money to pay for tuition fees, putting up with bank managers who make them run pillar to post to sanction loan, each and every one of them face not just financial issues but many more - but nothing has stopped these students from achieving 1178,1154 and 1136 out of 1200 and a CGPA of nothing less than 8.0 at CEG.
+    </p>
+    <br/>
+    <p><h4>Trust (Vs) Individual Sponsors</h4></p>
 
+    <p>
+        While the Trust is a collective sponsorship initiative, supported by as many as 140+ donors as of date, a few individuals expressed their willingness to do more.
+
+        <!-- to adjust for top bar -->
+        <div id="donations"></div>
+
+    They came forward to support the financial needs of a deserving student for all 4 years, through graduation. A couple of them took a leap of responsibility in additionally mentoring the students, preparing them to succeed in the world outside. The Trust is grateful to these individual sponsors for their commitment to the noble cause.
     </p>
     <div class="row">
         <div class="col-12"><a href="#home" class="btn float-right">Top</a></div>
     </div>
+    <br/>
 </div>
 <!-- The Donation Section -->
-<div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="donations">
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-donations">
+    <br/><br/>
     <h2 class="w3-wide">Donations</h2>
     <p class="w3-opacity1"><i>Your Small Contributions Today can Make a Big Diference to Some One.</i></p>
     <br/>
@@ -771,12 +802,19 @@
     <p class="w3-center">
         <b>A/C no:</b>  602205047907
     </p>
+
+    <!-- to adjust for top bar -->
+    <div id="committee"></div>
+
     <p class="w3-center">
         <b>IFSC code:</b>
         ICIC0006022</p>
     <p class="w3-center">
         <b>Beneficiary name:</b>
         CEG94Trust</p>
+
+
+
     <p class="w3-center">
         <b>Address:</b> NAC Towers, Dr. R.K.Salai, Mylapore, Chennai, Tamil Nadu 600004</p>
     <p class="w3-center">
@@ -785,10 +823,12 @@
     <div class="row">
         <div class="col-12"><a href="#home" class="btn float-right">Top</a></div>
     </div>
+    <br/>
 </div>
 
 <!-- The committee Section -->
-<div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="committee">
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-committee">
+    <br/>
     <h2 class="w3-wide">Office Bearers</h2>
     <br/>
     <p class="w3-center" style="font-weight: 600;">M. Tamilarasan (Civil) - Managing Trustee <br/>
@@ -822,6 +862,10 @@
             <td>&nbsp;</td>
             <td>J. Karpagavalli</td>
         </tr>
+
+    <!-- to adjust for top bar -->
+    <div id="contributions"></div>
+
         <tr>
             <td>S. Ganesh</td>
             <td>&nbsp;</td>
@@ -839,13 +883,15 @@
     <div class="row">
         <div class="col-12"><a href="#home" class="btn float-right">Top</a></div>
     </div>
+    <br/>
 </div>
 
 <!-- The contributions Section -->
-<div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="contributions">
-
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-contributions">
+    <br/>
+    <p>
     <h2 class="w3-wide">Students breakup for AY 2018-2019</h2>
-
+    </p>
     <br/>
     <p class="w3-center">
         <img src="images/ay2018-2019-studentmix.jpg" />
@@ -887,6 +933,7 @@
     <div class="row">
         <div class="col-12"><a href="#home" class="btn float-right">Top</a></div>
     </div>
+    <br/>
 </div>
 
     <div id="contribute" class="modal fade">
