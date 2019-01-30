@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="">
+    <title>CEG '94 Trust</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="
+  sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #eeeeee;
+            font-family:  "Slabo+27px", "Oxygen", "Open Sans", sans-serif;
+            font-weight: 300;
+        }
+
+        #nav .active, .collapsible:hover {
+            background-color: #fff;
+            color: black;
+        }
+
+        .dash-unit {
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border: 1px solid #383737;
+            /* background-image: url(../img/sep-half.png); */
+            background-color: #3d3d3d;
+            color: #fff;
+            height: 290px;
+        }
+        .cont {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .half-unit {
+            margin-bottom: 30px;
+            padding-bottom: 4px;
+            border: 1px solid #383737;
+            /* background-image: url(../img/sep-half.png); */
+            background-color: #3d3d3d;
+            color: #fff;
+            height: 130px;
+        }
+        .half-unit bold {
+            font-family: 'Open Sans',sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+            vertical-align: middle;
+        }
+        .dash-unit bold {
+            font-family: 'Open Sans',sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+            vertical-align: middle;
+        }
+        .sec-title {
+            padding-top: 1rem;
+            padding-bottom: 0rem;
+            background-color: #111111;
+            color: rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+        .sec-footer {
+            padding-top: 5rem;
+            padding-bottom: 10.2rem;
+            background-color: #111111;
+            color: rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+        .sec-contact {
+            padding-top: 5rem;
+            padding-bottom: 10.2rem;
+            background-color: #111111;
+            color: rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+        .sec-contrib{
+            padding-top: 5rem;
+            padding-bottom: 10.2rem;
+            background-color: #AAAAAA;
+            color: rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .sec-vision{
+            padding-top: 5rem;
+            padding-bottom: 10.2rem;
+            background-color: #111111;
+            color: rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+        .sec-aid{
+            padding-top: 5rem;
+            padding-bottom: 10.2rem;
+            background-color: #AAAAAA;
+            color: rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .sec-ben{
+            padding-top: 5rem;
+            padding-bottom: 10.2rem;
+            background-color: #EEEEEE;
+            color: rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .black-pen{
+            color: black
+        }
+
+
+        .w3-container, .w3-panel {
+            padding: 0.01em 10px;
+        }
+
+        /* unvisited link */
+        #contactus a:link {
+            color: red;
+        }
+
+        /* visited link */
+        #contactus a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        #contactus a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        #contactus a:active {
+            color: blue;
+        }
+
+        /* unvisited link */
+        #minutes a:link {
+            color: blue;
+        }
+
+        /* visited link */
+        #minutes a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        #minutes a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        #minutes a:active {
+            color: blue;
+        }
+
+
+
+        /* docs unvisited link */
+        #sec-home a:link {
+            color: blue;
+        }
+
+        /* visited link */
+        #sec-home a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        #sec-home a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        #sec-home a:active {
+            color: blue;
+        }
+
+
+        #sec-donations img {
+            width: 100%;
+            height: auto;
+        }
+
+        #sec-contributions img {
+            width: 100%;
+            height: auto;
+        }
+
+        #sec-ay2018-2019 img {
+            width: 100%;
+            height: auto;
+        }
+
+        #sec-selection img {
+            width: 100%;
+            height: auto;
+        }
+
+        #sec-beneficiaries img {
+            width: 100%;
+            height: auto;
+        }
+        .rupee {
+            color: #222;
+            font-size: 20px;
+            margin-bottom: 5px;
+            margin-top: -3px;
+            word-wrap: break-word;
+        }
+        .donation-high {
+            color: #222;
+            font-size: 16px;
+            margin-bottom: 5px;
+            margin-top: -3px;
+            word-wrap: break-word;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+        .icondirection {
+            flex-direction: row;
+            font-size: 28px;
+
+        }
+        .icontextvisible {
+            display: none;
+        }
+
+        @media only screen and (min-width: 300px), only screen and (max-width: 640px) {
+            .icondirection {
+                font-size: 30px;
+                flex-direction: row;
+            }
+            .icontextvisible {
+                display: none;
+                padding-right: 12px;
+            }
+            .sitetitle {
+                font-size: 18px;
+            }
+            .titlewidth {
+                width: 400px;
+            }
+
+            .titlemenu {
+                display: none;
+            }
+            .contactusmobile {
+                width: 100px;
+                display:inline;
+                padding-left: 0px;
+            }
+            .sectionpadding {
+                padding-top: 200px;
+            }
+        }
+
+        @media only screen and (min-width: 360px),  only screen and (max-width: 640px) {
+            .icondirection {
+                font-size: 34px;
+                flex-direction: row;
+            }
+            .icontextvisible {
+                display: none;
+                padding-right: 12px;
+            }
+            .sitetitle {
+                font-size: 18px;
+            }
+
+            .titlemenu {
+                display: none;
+            }
+            .contactusmobile {
+                width: 160px;
+                text-align: right;
+                display:inline;
+                padding-left: 40px;
+            }
+            .sectionpadding {
+                padding-top: 210px;
+            }
+        }
+
+
+
+        @media only screen and (min-width: 400px) {
+            .icondirection {
+                font-size: 40px;
+                flex-direction: row;
+            }
+            .icontextvisible {
+                display: none;
+                padding-right: 12px;
+            }
+            .sitetitle {
+                font-size: 22px;
+            }
+
+            .titlemenu {
+                display: none;
+            }
+            .contactusmobile {
+                width: 180px;
+                text-align: right;
+                display:inline;
+                padding-left: 50px;
+            }
+            .sectionpadding {
+                padding-top: 215px;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            .icondirection {
+                font-size: 19px;
+                flex-direction: column;
+            }
+            .icontextvisible {
+                display: block;
+                padding-right: 10px;
+            }
+            .sitetitle {
+                font-size: 40px;
+            }
+            .titlemenu {
+                display: block;
+            }
+            .contactusmobile {
+                display:none;
+            }
+            .sectionpadding {
+                padding-top: 200px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .icondirection {
+                font-size: 19px;
+                flex-direction: column;
+            }
+            .icontextvisible {
+                display: block;
+                padding-right: 5px;
+            }
+            .sitetitle {
+                font-size: 44px;
+            }
+            .titlemenu {
+                display: block;
+            }
+            .contactusmobile {
+                display:none;
+            }
+            .sectionpadding {
+                padding-top: 200px;
+            }
+        }
+
+        .sitetitlelink {
+            padding-left: 1rem;
+
+            text-decoration: none;
+        }
+
+        .titlewidth {
+            width: 400px;
+        }
+
+    </style>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119931166-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119931166-1');
+    </script>
+
+    <!-- End Google Analytics -->
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset=180>
+<!-- Navbar -->
+<div id="nav" class="w3-top">
+    <div class="w3-container  w3-content w3-center" style="max-width:800px" id="menu">
+
+        <section class="sec-title">
+            <!-- Grid row -->
+            <div class="row justify-content-stretch">
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <span class="d-flex order-0 justify-content-left titlewidth">
+                        <h3 class="pb-3  display-5"><a href="#" class="sitetitle sitetitlelink">The CEG'94 Trust</a></h3>
+                        <div class="contactusmobile float-right" style="width: 80px;">
+                            <a href="#neft" data-toggle="modal"><i class="far fa-hand-point-right" alt="Account details" style="color:white;font-size:12px;">Account Details</i></a>
+                        </div>
+
+                        <div class="contactusmobile float-right" style="width: 60px;">
+                            <a href="mailto:info@ceg94trust.org"><i class="far fa-envelope" alt="contact us" style="color:white;font-size:12px;font-weight:bold">&nbsp;Contact Us</i></a>
+                        </div>
+                    </span>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3 ml-auto titlemenu">
+
+                    <ul class="list-unstyled float-right">
+                        <li>
+                            <a href="#contribute" data-toggle="modal"><i class="far fa-money-bill-alt" alt="Want to contribute?" style="color:white;font-size:18px;">&nbsp;How can you help?</i></a>
+                        </li>
+                        <li>
+                            <a href="#neft" data-toggle="modal">&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-hand-point-right" alt="Account details" style="color:white;font-size:18px;">&nbsp;Account Details</i></a>
+                        </li>
+                        <li>
+
+                            <a href="mailto:info@ceg94trust.org">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-envelope" alt="contact us" style="color:white;font-size:18px;">&nbsp;Contact Us</i></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+
+            </div>
+            <!-- Grid row -->
+        </section>
+        <section>
+
+            <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-left">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                    Menu <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+                    <ul class="navbar-nav mx-auto text-center icondirection blue" >
+
+
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#sec-home" alt="who we are"><i class="fas fa-university" alt="who we are">&nbsp;<span class="icontextvisible">About</span></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ay2018-2019" alt="AY Supprt 2018-2019"><i class="fas fa-hands-helping" alt="AY Supprt 2018-2019">&nbsp;<span class="icontextvisible">2018-2019</span></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#selection"><i class="fas fa-user-graduate">&nbsp;<span class="icontextvisible">Selection</span></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beneficiaries"><i class="fas fa-crown">&nbsp;<span class="icontextvisible">Beneficiaries</span></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#donations"><i class="fas fa-donate">&nbsp;<span class="icontextvisible">Donations</span></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#committee"><i class="fas fa-users">&nbsp;<span class="icontextvisible">Committee</span></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contributions"><i class="fas fa-signal">&nbsp;<span class="icontextvisible">Documents</span></i></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </nav>
+
+
+
+        </section>
+    </div>
+
+
+
+</div>
+
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="position:relative; max-width:800px;">
+
+    <!-- The Trust Section -->
+    <div class="w3-container w3-content w3-center sectionpadding" style="max-width:800px;" id="sec-home">
+
+        <section>
+            <div class="container justify-content-stretch">
+                <div class="col">
+                    <div class="col-md-12 col-sm-12 col-lg-12">
+                        <h4 class="pb-3  display-6"><i>Ignite the Future</i></h4>
+                        <p class="pb-3 display-5">College of Engineering, Guindy, is a 225- year-old prestigious institution, that has produced eminent technocrats, entrepreneurs and statesmen over time. Each year over 1200 students graduate from 14 disciplines of engineering from this meritorious institution.</p>
+                        <p>We, the alumni of this institution, who passed out in the year 1994, have joined together to form the CEG94 Trust on 29 Nov 2017 with an aim to help the CEG community.</p>
+                    </div>
+                </div>
+                <br/>
+                <div class="col">
+                    <h3>Our Vision</h3>
+                    <p>To give back to our society by helping the less fortunate students of CEG to achieve their dreams.</p>
+                </div>
+
+                <div class="col">
+                    <br/>
+                    <h3>Our Mission</h3>
+                    <p>Monetary help for the meritorious and needy students to pay Tuition Fees and Hostel Fees, irrespective of religion, caste, creed or gender.</p>
+                    <p>Non-monetary help in terms of mentoring, career guidance and soft skills development.</p>
+                    <p>Connecting our batchmates to the needy students for additional help.</p>
+                </div>
+
+                <div class="col">
+                    <br/>
+                    <p><h4 style="font-weight:bold;color:forestgreen">Thank you!!</h4></p>
+                    <p>The CEG'94 trust is ever grateful to the donors, who have contributed so far in lighting the lives of twelve students in AY 2018-19.</p>
+                    <p>Specifically, your donation amounts in excess of ₹ 10,000, have helped us jump start the process since we are able to disburse up to ₹3.5L through the Trust (excluding individual sponsorship) in this academic year. </p>
+                    <p>Hence each and every one of you is a partial sponsor for the twelve students selected in this academic year.</p>
+                    <p>Together, we hope to sponsor students every year through your continued magnanimous donations.</p>
+                </div>
+
+                <div class="col">
+                    <p><h4 class="w3-wide"><br/>Account details</h4></p>
+                    <p class="w3-center">
+                        <b>A/C no:</b>  602205047907
+                    </p>
+
+                    <!-- to adjust for top bar -->
+                    <div id="ay2018-2019"></div>
+
+                    <p class="w3-center">
+                        <b>IFSC code:</b>
+                        ICIC0006022</p>
+
+
+                    <p class="w3-center">
+                        <b>Beneficiary name:</b>
+                        CEG94Trust</p>
+                    <p class="w3-center">
+                        <b>Address:</b> NAC Towers, Dr. R.K.Salai, Mylapore, Chennai, Tamil Nadu 600004</p>
+                    <p class="w3-center">
+                        <b>Phone:</b> 044 3366 7777
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-12"><a href="#sec-home" class="btn float-right">Top</a></div>
+        </div>
+    </div>
+
+
+<!-- The Academic Year Section -->
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-ay2018-2019">
+    <section class="sec-curray">
+        <p>
+        <h2 class="w3-wide">Student support in Academic Year (AY)</h2>
+        <h2 class="w3-wide">2018-19</h2>
+        </p>
+        <br/>
+            <p class="w3-center">
+                <img src="images/aybreakup_sep2018.jpg" />
+            </p>
+        <b>As on 1st Aug 2018</b>
+        <br/>
+        <p class="w3-center rupee">
+            <b>Odd semester</b> <br/> 7 students - ₹ 1,13,661
+            <br/>
+            <b>Even semester </b><br/> 12 students - ₹ 2,79,772
+            <br/>
+            <b>Total: ₹ 4,23,113</b>
+        </p>
+        <br/>
+        <h4 class="w3-wide">Highlights</h4>
+
+        <p class="w3-center" style="font-size: 16px;font-weight: bold;color:#228B22;">
+
+            Full graduation support offered by 2 alumni to 2 students
+            <br/>
+            Partial fees support offered by 5 alumni to 3 students
+
+        </p>
+        <br/>
+
+        <br/>
+        <p style="text-align: left">
+
+            For AY2018-19, 12 students have been selected by the Trust for tuition and/or hostel fees support in odd and/or even semesters, depending on their financial situation. In summary, ₹ 4.23 Lacs of sponsorship committed, with an additional ₹ 1.95 Lacs support pledged for the current academic year.
+        </p>
+        <br/>
+        <p style="text-align: left">
+            Further, for the even semester commencing Dec’18,
+        </p>
+
+        <br/>
+
+        <ul style="text-align: left;">
+            <li>Funding reserved by Trust for supporting two 1st year students (₹ 70k)</li>
+
+            <!-- to adjust for top bar -->
+            <div id="selection"></div>
+
+            <li>Funding pledged by 1 Individual Donor for supporting two 1st year students (₹ 70k)</li>
+            <li>Funding pledged by 2 Individual Donors for supporting hostel fees for two students (₹ 55k)</li>
+        </ul>
+
+
+        <br/>
+        <p class="w3-center rupee" style="text-align: left">
+            Total funding planned for current academic year is <b>₹ 6.18 Lacs</b>.
+        </p>
+        <div class="row">
+            <div class="col-12"><a href="#sec-home" class="btn float-right">Top</a></div>
+        </div>
+        <br/>
+    </section>
+</div>
+
+<!-- The Academic Year Section -->
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-selection">
+    <br/>
+    <p><h2 class="w3-wide">Student selection process</h2></p>
+    <br/>
+    <p style="text-align: left">
+        The Trust strives to choose deserving students for sponsorship, irrespective of their caste, creed or sex. The process of student selection for sponsorship is based on the following criteria, in the order specified:
+        <br/>1.  Max family income is Rs 2.5L per annum, with students from lowest income families gaining preference.
+        <br/>2.  Whether the student is a First graduate from the family.
+        <br/>3.  Whether (s)he studied in a Government or Government-Aided school
+        <br/>4.  Whether (s)he studied in Tamil medium in their 12th std.
+        <br/>5.  Supporting family members – Student with no parent/Single parent gains preference.
+        <br/>6.  Whether (s)he hails from rural or Tier 3/2/1 town, with rural student gaining the higher preference.
+        <br/>7.  Whether the student is in receipt of any other scholarships. Receipt of partial scholarship / assistance considered on case-by-case basis. Student will not be considered for sponsorship by our Trust if they are in receipt of any other full scholarship.
+        <br/>8.  Whether the student is in receipt of a bank education loan. Depending on the loan amount, (s)he will be considered for sponsorship through the Trust.
+    </p>
+    <br/>
+    <h4 class="w3-wide">Sponsorship for subsequent academic years</h4>
+    <br/>
+    <p style="text-align: left">
+        The AACEG receives applications on a per year basis for support.
+        Our Trust is not bound to support the student for further academic years, though they will be considered for support if they apply in the following year. In the case of continuing scholarship for subsequent years, the following criteria is applied:
+        <br/>1. Minimum CGPA of 7.0
+        <br/>2. The student should not have more than 3 cumulative arrears at any point of time.
+
+        <br/><br/>
+    <h4>Student selection – July 2018</h4>
+    <br/>For AY 2018-19, the Trust obtained a list of candidates studying in II to IV years, through Alumni Association CEG (AACEG) and shortlisted twelve applicants for assessment. A panel of 5 trustees and advisory members met with them at the premises of AACEG on July 06, 2018. We are happy to announce that all the twelve students were granted partial or full support for this academic year for the help they sought.
+
+    <br/><br/>The Trust pays the fees directly to college account, so in case the student had paid part of the fees for the current semester before our assessment, assistance is provided only for the part of unpaid fees. Hence some of them were eligible only for partial support for current semester.
+
+    <br/><br/>Admission for first year students normally happens in August every year. From AY 2018-19, the admission counselling was made online, and the students were required to pay their fees prior to reporting at the college. The Trust anticipates that there will be students requiring assistance for their II semester fees in Nov’18.
+    </p>
+
+    <br/>
+
+    <!-- to adjust for top bar -->
+    <div id="beneficiaries"></div>
+
+    <h4>Future actions intended by Trust</h4>
+    <p class="w3-center">
+        <br/>Trust will provide support in applying for government scholarships, if applicable.
+        <br/>Trust will explore helping students to obtain educational loan from banks, if they have relevant documents and are being denied education loans for no proper reasons.
+    </p>
+    <div class="row">
+        <div class="col-12"><a href="#sec-home" class="btn float-right">Top</a></div>
+    </div>
+    <br/>
+</div>
+<!-- The Academic Year Section -->
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-beneficiaries">
+
+    <h2 class="w3-wide">Beneficiaries</h2>
+    <br/>
+    <p class="w3-center">
+        6 boys and 6 girls from 2nd to final year have benefited, and 4 more to be chosen from first year in Nov’18. All the students are from economically weaker sections of the society and most of them hail from villages or small towns. Several of them have tried to obtain  bank education loans and were denied for no proper reasons.
+        <br/><br/>
+    </p>
+    <p style="text-align: left">
+        We have provided details below about 4 of the 12 deserving students.
+
+        <br/>1. Tamil medium girl student , scored 1178/1200 in 12th and a cut-off of 198,  monthly income of family is 4k.
+        <br/>2. Girl student , scored 1154 in 12th and a cut-off of 193.25, single parent,  monthly family income of 5k.
+        <br/>3. Male student, has a 12th score of 1136 with cut-off 192.25, monthly family income is 7k.
+        <br/>4. Male student, Tamil  medium at Government school ,  scored 1134 in 12th with a cut-off of 192 with family monthly ncome of less than 10k.
+    </p>
+
+    <br/>
+    <p class="w3-center"><h4>Student Evaluation Experience</h4></p>
+    <br/>
+    <p>The student evaluation experience was very intense. The family and economic background of some of these students made us realize how heroic some of them truly are.</p>
+    <br/>
+    <p>With parental income of ₹4k to ₹10k per month, single parent in some cases, transitioning from Tamil medium to English, not having money to go back and visit their parents even once during a semester, having to use scholarship money to pay for tuition fees, putting up with bank managers who make them run pillar to post to sanction loan, each and every one of them face not just financial issues but many more - but nothing has stopped these students from achieving 1178,1154 and 1136 out of 1200 and a CGPA of nothing less than 8.0 at CEG.
+    </p>
+    <br/>
+    <p><h4>Trust (Vs) Individual Sponsors</h4></p>
+
+    <p>
+        While the Trust is a collective sponsorship initiative, supported by as many as 140+ donors as of date, a few individuals expressed their willingness to do more.
+
+        <!-- to adjust for top bar -->
+        <div id="donations"></div>
+
+    They came forward to support the financial needs of a deserving student for all 4 years, through graduation. A couple of them took a leap of responsibility in additionally mentoring the students, preparing them to succeed in the world outside. The Trust is grateful to these individual sponsors for their commitment to the noble cause.
+    </p>
+    <div class="row">
+        <div class="col-12"><a href="#sec-home" class="btn float-right">Top</a></div>
+    </div>
+    <br/>
+</div>
+<!-- The Donation Section -->
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-donations">
+    <br/><br/>
+    <h2 class="w3-wide">Donations</h2>
+    <p class="w3-opacity1"><i>Your Small Contributions Today can Make a Big Diference to Some One.</i></p>
+    <br/>
+    <p class="w3-center donation-high">
+        Minimum contribution of ₹ 10,000/- requested from each 1994 alumni would go towards building a corpus. Interest from this corpus would be used to sponsor students fees from AY 2020-21.
+    </p>
+    <br/>
+    <p class="w3-center donation-high" style="font-weight: bold;color: #228B22;">
+        If you choose to sponsor a students fees for one or more semesters  (₹ 35,000 approx. per semester) , kindly contact the Trust team.
+    </p>
+    <br/>
+    <p class="w3-center">
+        The Trust started accepting donations from the 1994 alumni since March, 2018. Donations up to ₹10,000/- were added to the corpus fund and amounts in excess of ₹10,000/- were accumulated in a near-term kitty to fund immediate two years sponsorship needs for AY2018-19 and AY2019-20.
+        <br/><br/>As of 01 August.2018, about ₹14.5 Lacs in the corpus and ₹7 Lacs was collected in the near-term kitty. The Trust plans to support up to ₹3.5 Lacs per year for students sponsorship in AY2018-19 and AY2019-20.
+    </p>
+    <br/>
+
+
+    <span style="align:left">
+        <h4>How can you help?</h4>
+                    <p style="text-align: left;">
+                        <br/>You can contribute in one of the following ways:
+                        <br/>1. Minimum contribution of ₹ 10,000/- requested from each 1994 alumni would go towards building a ₹30 Lacs corpus. Interest from this corpus would be used to sponsor students fees from AY2020-21.
+                        <br/>2. Donors may also choose to specifically donate towards the near-term tuition and/or hostel fees for a particular academic year or semester. Any excess/unused amounts would be rolled forward to support subsequent semester(s) fees.
+                        <br/>3. Donors giving repeat donations may need to inform the Trust (by email or via department champions) if they would like to support near-term fees, otherwise, by default, their contribution would be added to the corpus.
+                        <br/><br/>
+                    <h4>What kind of non-monetary help can be provided?</h4>
+                    <br/>The Trust engages with CEG on various activities such as conducting mock interviews, mentor-ship and student development programs. Interested Alumni may contact the Trust to contribute meaningfully to the student community.
+
+                    </p>
+
+
+    </span>
+    <br/>
+    <h2 class="w3-wide">Contributions so far!!</h2>
+    <br/>
+    <p class="w3-center">
+        <img src="images/donations_sep2018.jpg" />
+    </p>
+
+    <br/>
+    <h4 class="w3-wide"><br/>Account details</h4>
+    <p class="w3-center">
+        <b>A/C no:</b>  602205047907
+    </p>
+
+    <!-- to adjust for top bar -->
+    <div id="committee"></div>
+
+    <p class="w3-center">
+        <b>IFSC code:</b>
+        ICIC0006022</p>
+    <p class="w3-center">
+        <b>Beneficiary name:</b>
+        CEG94Trust</p>
+
+
+
+    <p class="w3-center">
+        <b>Address:</b> NAC Towers, Dr. R.K.Salai, Mylapore, Chennai, Tamil Nadu 600004</p>
+    <p class="w3-center">
+        <b>Phone:</b> 044 3366 7777
+    </p>
+    <div class="row">
+        <div class="col-12"><a href="#sec-home" class="btn float-right">Top</a></div>
+    </div>
+    <br/>
+</div>
+
+<!-- The committee Section -->
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-committee">
+    <br/>
+    <h2 class="w3-wide">Office Bearers</h2>
+    <br/>
+    <p class="w3-center" style="font-weight: 600;">M. Tamilarasan (Civil) - Managing Trustee <br/>
+        R.S. Ramesh (Mech) - Secretary<br/>
+        V. Purushothaman (ECE) – Treasurer<br/>
+    <h4 class="w3-wide"><br/>Trustees</h4>
+    </p>
+    <p class="w3-center">
+        N. Anuradha (Industrial)<br/>
+        K.P. Karuvelamuthu (EEE)<br/>
+        K. Natarajan (Printing)<br/>
+        S. Priya (CSE)<br/>
+        S. Selvakumar (ECE)<br/>
+    </p>
+
+    <h4 class="w3-wide"><br/>Advisory committee</h4>
+    <p class="w3-center">
+    <table align="center">
+        <tr>
+            <td>B. Jaishankar</td>
+            <td>&nbsp;</td>
+            <td>R. Kannan</td>
+        </tr>
+        <tr>
+            <td>S. S. Karthikeyan</td>
+            <td>&nbsp;</td>
+            <td>J. Lalitha</td>
+        </tr>
+        <tr>
+            <td>S. Prem Kumar</td>
+            <td>&nbsp;</td>
+            <td>J. Karpagavalli</td>
+        </tr>
+
+    <!-- to adjust for top bar -->
+    <div id="contributions"></div>
+
+        <tr>
+            <td>S. Ganesh</td>
+            <td>&nbsp;</td>
+            <td>Revathy T. Subramaniam</td>
+        </tr>
+        <tr>
+            <td>N. Srikanth</td>
+            <td>&nbsp;</td>
+            <td>C. Ramamurthy</td>
+        </tr>
+
+    </table>
+
+    </p>
+    <div class="row">
+        <div class="col-12"><a href="#sec-home" class="btn float-right">Top</a></div>
+    </div>
+    <br/>
+</div>
+
+<!-- The contributions Section -->
+<div class="w3-container w3-content w3-center" style="max-width:800px;" id="sec-contributions">
+    <br/>
+    <p>
+    <h2 class="w3-wide">Students breakup for AY 2018-2019</h2>
+    </p>
+    <br/>
+    <p class="w3-center">
+        <img src="images/ay2018-2019-studentmix.jpg" />
+    </p>
+    <br/>
+    <p class="w3-center">
+        <img src="images/ay2018-2019-feesmix.jpg" />
+    </p>
+    <button class="collapsible">
+        <h2>CEG Fees Structure</h2>
+        <p class="expand" style="display: block;">click to expand...</p>
+        <p class="collapse"style="display: none;">click to collapse...</p></button>
+
+    <br/>
+    <div class="content">
+        <br/>
+        <p class="w3-center">
+            Currently, two streams of courses are offered at CEG:
+            <br/>Core Engineering (Civil, Geo-Informatics, Mech, Manufacturing, Industrial, Mining, Printing, EEE, ECE and Computer Science) and Self-supporting courses (Bio-medical, Agri and Irrigation, Material Science and Information Technology).
+            <br/>
+            <br/>The tuition fees for the core engineering courses are ₹7,500 per semester and for the self-supporting courses, ₹15,000 per semester.
+            <br/>Hostel fees is about ₹12,000 and Mess fees ₹13,000, totaling ₹25,000 per semester.
+            <br/><br/>In comparison, the tuition fees at IIT-Madras is ₹1.08 Lacs and hostel + mess fees is ₹25k per semester.
+            <br/><br/>We understand from the Anna University Vice-Chancellor and Alumni Association, that a majority of the requests for assistance is required to support hostel fees. The college reaches out to its extensive alumni network for supporting needy students so as to avoid dropouts.
+        </p>
+    </div>
+    <br/>
+    <h2 class="w3-wide">Contribution Details</h2>
+    <br/>
+    <p>
+        <img src="images/corpuscollec_sep2018.jpg" />
+    </p>
+    <p>
+        <img src="images/percent_sep2018.jpg" />
+    </p>
+    <p>
+        <img src="images/contrib_sep2018.jpg" />
+    </p>
+    <div class="row">
+        <div class="col-12"><a href="#sec-home" class="btn float-right">Top</a></div>
+    </div>
+    <br/>
+</div>
+
+    <div id="contribute" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>How can you help?</h4>
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: left;">
+                        <br/>You can contribute in one of the following ways:
+                        <br/>1. Minimum contribution of ₹ 10,000/- requested from each 1994 alumni would go towards building a ₹30 Lacs corpus. Interest from this corpus would be used to sponsor students fees from AY2020-21.
+                        <br/>2. Donors may also choose to specifically donate towards the near-term tuition and/or hostel fees for a particular academic year or semester. Any excess/unused amounts would be rolled forward to support subsequent semester(s) fees.
+                        <br/>3. Donors giving repeat donations may need to inform the Trust (by email or via department champions) if they would like to support near-term fees, otherwise, by default, their contribution would be added to the corpus.
+                        <br/><br/>
+                    <h4>What kind of non-monetary help can be provided?</h4>
+                    <br/>The Trust engages with CEG on various activities such as conducting mock interviews, mentor-ship and student development programs. Interested Alumni may contact the Trust to contribute meaningfully to the student community.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="neft" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>NEFT/IMPS Details</h4>
+                </div>
+                <div class="modal-body">
+                    <p>A/C no: 602205047907 </p>
+                    <p>IFSC code: ICIC0006022</p>
+                    <p>Beneficiary name: CEG94Trust</p>
+                    <p>Account Type: Current Account</p>
+                    <p>Address: NAC Towers, Dr. R.K.Salai, Mylapore, Chennai, Tamil Nadu 600004</p>
+                    <p>Phone: 044 3366 7777</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var expand = this.getElementsByClassName("expand");
+            if (expand) {
+                var expand1 = expand[0]
+                if (expand1.style.display === "block") {
+                    expand1.style.display = "none";
+                } else {
+                    expand1.style.display = "block";
+                }
+            }
+            var collapse = this.getElementsByClassName("collapse");
+            if (collapse) {
+                var collapse1 = collapse[0]
+                if (collapse1.style.display === "block") {
+                    collapse1.style.display = "none";
+                } else {
+                    collapse1.style.display = "block";
+                }
+            }
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+
+
+</script>
+</body>
+
+
+</html>
